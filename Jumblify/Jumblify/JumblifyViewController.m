@@ -10,6 +10,9 @@
 
 @interface JumblifyViewController ()
 
+@property (nonatomic, weak) IBOutlet UITextField *inputField;
+@property (nonatomic, weak) IBOutlet UILabel *jumbledLabel;
+
 @end
 
 @implementation JumblifyViewController
@@ -40,6 +43,13 @@
             completion(@"result");
         });
     });
+}
+
+#pragma mark - IBActions
+
+- (IBAction)jumbilifyTapped:(id)sender
+{
+    self.jumbledLabel.text = [self reverseString:self.inputField.text];
 }
 
 @end
