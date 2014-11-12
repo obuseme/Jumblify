@@ -19,6 +19,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter some text..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asC-j6-kao">
                                 <rect key="frame" x="100" y="106" width="400" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Input Field"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
